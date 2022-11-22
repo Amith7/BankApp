@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 class="form-title">Login</h1>
+    <!-- //string interpolation -->
+    <h5>{{aim}}</h5> 
+    <form action="#">
+        <div class="main-user-info">
+        
+                <div class="user-input-box ">
+                    <input #acno type="text"   id="login_acno"  [placeholder]="account"> 
+                    <!-- property binding -->
+                </div>
+                <div class="user-input-box">
+                    <input #pswd type="password" id="login_pswd"  placeholder="Enter Password">
+                </div>
+
+            
+        </div>
+        <div class="form-submit-btn">
+            <button type="button" (click)="login(acno,pswd)" >Log In</button>
+        </div>
+
+    </form>
+</div>
+
