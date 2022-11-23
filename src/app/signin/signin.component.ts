@@ -41,28 +41,11 @@ export class SigninComponent implements OnInit {//(3rd execute)
 
   }
 
-  //   login() {
-  //     // alert("  Log in Clicked")
-
-  //     var acno = this.acno;
-  //     var pswd = this.pswd;
-  //     var userDetails = this.userDetails
-  //     if (acno in userDetails) {
-  //       if (pswd == userDetails[acno]['password']) {//always in single quotes
-  //         alert("Log in SuceesFully")
-  //       }else{
-  //         alert("invalid pasword")
-  //       }
-  //     }else{
-  //       alert("invalid User Details")
-  //     }
-  //   }
-  // # varables
-  login(a: any, p: any) {
+  login() {
     // alert("  Log in Clicked")
 
-    var acno = a.value;
-    var pswd = p.value;
+    var acno = this.acno;
+    var pswd = this.pswd;
     var userDetails = this.userDetails
     if (acno in userDetails) {
       if (pswd == userDetails[acno]['password']) {//always in single quotes
@@ -74,6 +57,23 @@ export class SigninComponent implements OnInit {//(3rd execute)
       alert("invalid User Details")
     }
   }
+  // # varables
+  // login(a: any, p: any) {
+  //   // alert("  Log in Clicked")
+
+  //   var acno = a.value;
+  //   var pswd = p.value;
+  //   var userDetails = this.userDetails
+  //   if (acno in userDetails) {
+  //     if (pswd == userDetails[acno]['password']) {//always in single quotes
+  //       alert("Log in SuceesFully")
+  //     } else {
+  //       alert("invalid pasword")
+  //     }
+  //   } else {
+  //     alert("invalid User Details")
+  //   }
+  // }
 
 }
 
